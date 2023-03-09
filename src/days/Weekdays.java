@@ -11,17 +11,10 @@ package days;
 public class Weekdays 
 {
     
-    enum Weekday {MONDAY,TUESDAY,WEDNESDAY,THRUSDAY,FRIDAY,SATURDAY,SUNDAY }
 
-
-  public void nameOfDay( ){
-      
-      public getWeekday(){
-      
-         
-    }
+    
   
 }
-} 
+
 
 
