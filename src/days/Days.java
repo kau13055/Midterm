@@ -11,23 +11,29 @@ import java.util.Scanner;
  * name of the day.
  * if the input is not given in String, 
  * program will accept and produce wrong results. 
- * change the code to use enums which avoids String input 
+ * change the code to use  enums which avoids String input 
  * then print the week day names. 
  *
  * @author sivagamasrinivasan
  */
 public class Days {
 
-    /**
+    /**enum Weekday {MONDAY,TUESDAY,WEDNESDAY,THRUSDAY,FRIDAY,SATURDAY,SUNDAY }
      * @param args the command line arguments
      */
+    enum Weekday {MONDAY,TUESDAY,WEDNESDAY,THRUSDAY,FRIDAY,SATURDAY,SUNDAY }
     public static void main(String[] args) {
+        
+        
          
-    Scanner in =new Scanner(System.in);
-    System.out.println("Enter the day number (one,two,three,four,five) in string");
-    String code = in.next();
-    Weekdays t= new Weekdays();
-    t.nameOfDay(code); 
+        Weekdays[] days = Weekdays.values();
+
+        for (Weekdays day : days) {
+            System.out.println(day);
+        }
+
+
+
     }// TODO code application logic here
     
     
